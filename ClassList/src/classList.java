@@ -1,8 +1,11 @@
+import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Iterator;
 
-public class ClassList {
+public class classList {
 	Map<String,String> classList = new HashMap<String,String>();	
-	public ClassGrades() {
+	public classGrades() {
 		classList.put("Bob", "A");
 		classList.put("Mary", "C");
 		classList.put("Sarah", "B");
@@ -31,5 +34,10 @@ public class ClassList {
 		for (String value : classList.values()) {
 			System.out.println("Value = " + value);
 		}	
+	}
+	
+	public static void main(String[] args) {
+		ClassGrades myClassList = new ClassGrades();
+		myClassList.printClassList();
 	}
 }
